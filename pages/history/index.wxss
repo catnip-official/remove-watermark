@@ -1,0 +1,157 @@
+page {
+  background-color: #F7F8FA;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 16rpx;
+  gap: 24rpx;
+}
+
+.history-item {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+  box-sizing: border-box;
+}
+
+.item-header {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 16rpx;
+  border-bottom: 1rpx solid #F3F4F6;
+}
+
+.item-index {
+  font-size: 26rpx;
+  color: #9CA3AF;
+  font-weight: 500;
+}
+
+.item-body {
+  display: flex;
+  flex-direction: row;
+  gap: 24rpx;
+}
+
+.cover-box {
+  width: 160rpx;
+  height: 200rpx;
+  background-color: #E5E7EB;
+  border-radius: 16rpx;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.cover-img {
+  width: 100%;
+  height: 100%;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 24rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-icon::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10rpx solid transparent;
+  border-bottom: 10rpx solid transparent;
+  border-left: 16rpx solid #FFFFFF;
+  margin-left: 6rpx;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+  flex: 1;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.info-label {
+  font-size: 28rpx;
+  color: #6B7280;
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
+.info-value {
+  font-size: 28rpx;
+  color: #111827;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.title-value {
+  -webkit-line-clamp: 2;
+  font-weight: 500;
+}
+
+.desc-value {
+  -webkit-line-clamp: 2;
+  color: #42A5F5;
+}
+
+.item-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16rpx;
+}
+
+.btn-detail {
+  padding: 12rpx 32rpx;
+  background-color: #F3F4F6;
+  border-radius: 32rpx;
+}
+
+.btn-detail-text {
+  font-size: 26rpx;
+  color: #42A5F5;
+  font-weight: 500;
+}
+
+.empty-state {
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-text {
+  font-size: 28rpx;
+  color: #9CA3AF;
+}

@@ -1,0 +1,128 @@
+page {
+  background-color: #F7F8FA;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 16rpx;
+  gap: 32rpx;
+}
+
+.textarea-container {
+  width: 100%;
+  height: 360rpx;
+  background-color: #FFFFFF;
+  border-radius: 20rpx;
+  padding: 32rpx;
+  box-sizing: border-box;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
+  border: 1rpx solid #F3F4F6;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-textarea {
+  width: 100%;
+  flex: 1;
+  font-size: 30rpx;
+  color: #111827;
+  line-height: 1.5;
+}
+
+.placeholder-style {
+  color: #6B7280;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 24rpx;
+}
+
+.btn {
+  flex: 1;
+  height: 96rpx;
+  border-radius: 16rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.05);
+}
+
+.btn-paste {
+  background-color: #F3F4F6;
+  border: 2rpx solid #E5E7EB;
+  box-shadow: none;
+}
+
+.btn-parse {
+  background: linear-gradient(135deg, #42A5F5 0%, #1E88E5 100%);
+}
+
+.btn-text {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #374151;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-clear {
+  color: #111827;
+}
+
+.platforms {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 24rpx;
+  margin-top: 12rpx;
+  border-top: 1rpx dashed #F3F4F6;
+}
+
+.info-icon-wrapper {
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 16rpx;
+  background-color: #D1D5DB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 12rpx;
+}
+
+.info-icon {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  font-size: 20rpx;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 2rpx;
+}
+
+.platforms-text {
+  font-size: 26rpx;
+  color: #6B7280;
+  letter-spacing: 1rpx;
+}

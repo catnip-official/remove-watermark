@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="content">
+    <view class="textarea-container">
+      <textarea 
+        class="link-textarea" 
+        placeholder="请将分享链接粘贴在此处" 
+        placeholder-class="placeholder-style"
+        value="{{linkText}}"
+        bindinput="onInput"
+        maxlength="-1"
+      ></textarea>
+      
+      <view class="platforms">
+        <view class="info-icon-wrapper">
+          <text class="info-icon">i</text>
+        </view>
+        <text class="platforms-text">请粘贴含 http 的分享链接</text>
+      </view>
+    </view>
+
+    <view class="button-row">
+      <view class="btn btn-paste" bindtap="handlePasteOrClear">
+        <text class="btn-text {{linkText ? 'text-clear' : ''}}">{{linkText ? '清空文案' : '粘贴链接'}}</text>
+      </view>
+      <view class="btn btn-parse" bindtap="handleParse">
+        <text class="btn-text text-white">{{linkText ? '一键解析' : '粘贴并解析'}}</text>
+      </view>
+    </view>
+  </view>
+</view>

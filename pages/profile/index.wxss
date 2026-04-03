@@ -1,0 +1,125 @@
+page {
+  background-color: #F7F8FA;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 16rpx;
+  gap: 16rpx;
+}
+
+.history-card {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 20rpx;
+  padding: 32rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.left-part {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24rpx;
+}
+
+.icon-box {
+  width: 96rpx;
+  height: 96rpx;
+  background-color: #EFF6FF;
+  border-radius: 48rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-img {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.text-part {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #111827;
+}
+
+.subtitle {
+  font-size: 24rpx;
+  color: #6B7280;
+}
+
+.arrow-icon {
+  font-size: 32rpx;
+  color: #D1D5DB;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-left: auto;
+  font-weight: 300;
+}
+
+.menu-card {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 20rpx;
+  padding: 0 32rpx;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.menu-item {
+  width: 100% !important;
+  height: 112rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1rpx solid #F3F4F6;
+  background-color: transparent;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: inherit;
+  text-align: left;
+  box-sizing: border-box;
+  gap: 20rpx;
+}
+
+.menu-item::after {
+  border: none;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-icon {
+  width: 44rpx;
+  height: 44rpx;
+  flex-shrink: 0;
+}
+
+.menu-text {
+  font-size: 32rpx;
+  color: #111827;
+  flex: 1;
+  text-align: left;
+  font-weight: normal;
+}

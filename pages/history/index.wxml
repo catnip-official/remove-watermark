@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="content">
+    <block wx:if="{{historyList.length > 0}}">
+      <view class="history-item" wx:for="{{historyList}}" wx:key="timestamp">
+        <!-- 头部：编号 -->
+        <view class="item-header">
+          <text class="item-index">记录 #{{historyList.length - index}}</text>
+        </view>
+        
+        <!-- 主体内容 -->
+        <view class="item-body">
+          <view class="cover-box">
+            <image class="cover-img" src="{{item.cover}}" mode="aspectFill" referrer-policy="origin"></image>
+            <view class="play-icon" wx:if="{{!item.isImage}}"></view>
+          </view>
+          <view class="info-box">
+            <view class="info-row">
+              <text class="info-label">标题：</text>
+              <text class="info-value title-value">{{item.title}}</text>
+            </view>
+            <view class="info-row">
+              <text class="info-label">文案：</text>
+              <text class="info-value desc-value">{{item.content || '无'}}</text>
+            </view>
+          </view>
+        </view>
+
+        <!-- 底部操作 -->
+        <view class="item-footer">
+          <view class="btn-detail" bindtap="goToResult" data-item="{{item}}">
+            <text class="btn-detail-text">查看详情</text>
+          </view>
+        </view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="empty-state">
+        <text class="empty-text">暂无解析记录</text>
+      </view>
+    </block>
+  </view>
+</view>

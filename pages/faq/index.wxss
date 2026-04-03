@@ -1,0 +1,16 @@
+page {
+  background-color: #F7F8FA;
+}
+
+.page-placeholder {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32rpx;
+}
+
+.page-placeholder-text {
+  font-size: 30rpx;
+  color: #6b7280;
+}

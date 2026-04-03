@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="content">
+    <!-- 解析记录入口 -->
+    <view class="history-card" bindtap="goToHistory">
+      <view class="left-part">
+        <view class="icon-box">
+          <image class="icon-img" src="/assets/images/history.png" mode="aspectFit"></image>
+        </view>
+        <view class="text-part">
+          <text class="title">解析记录</text>
+          <text class="subtitle">仅保存最近50条解析记录</text>
+        </view>
+      </view>
+      <view class="arrow-icon">></view>
+    </view>
+
+    <!-- 菜单列表 -->
+    <view class="menu-card">
+      <view class="menu-item" bindtap="goToTutorial">
+        <image class="menu-icon" src="/assets/images/rule.png" mode="aspectFit"></image>
+        <text class="menu-text">使用教程</text>
+        <view class="arrow-icon">></view>
+      </view>
+      <view class="menu-item" bindtap="goToFAQ">
+        <image class="menu-icon" src="/assets/images/question.png" mode="aspectFit"></image>
+        <text class="menu-text">常见问题</text>
+        <view class="arrow-icon">></view>
+      </view>
+      <button class="menu-item btn-contact" open-type="contact">
+        <image class="menu-icon" src="/assets/images/contact.png" mode="aspectFit"></image>
+        <text class="menu-text">联系客服</text>
+        <view class="arrow-icon">></view>
+      </button>
+      <button class="menu-item btn-share" open-type="share">
+        <image class="menu-icon" src="/assets/images/share.png" mode="aspectFit"></image>
+        <text class="menu-text">分享好友</text>
+        <view class="arrow-icon">></view>
+      </button>
+    </view>
+  </view>
+</view>
